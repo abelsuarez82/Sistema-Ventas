@@ -1,0 +1,131 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261108111530
+Nombre de usuario: ABELSUAREZ\abel suarez
+Usuario RunAs: ABELSUAREZ\abel suarez
+Nombre de la configuración: 
+Máquina: ABELSUAREZ (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Id. de proceso: 29012
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es C:\Users\abel suarez\Desktop\auditoria_completa.txt
+PS C:\Users\abel suarez> cd $HOME\Desktop
+PS C:\Users\abel suarez\Desktop> mkdir Sistema_Ventas
+
+
+    Directorio: C:\Users\abel suarez\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/11/2026     11:17                Sistema_Ventas
+
+
+PS C:\Users\abel suarez\Desktop> cd Sistema_Ventas
+PS C:\Users\abel suarez\Desktop\Sistema_Ventas> mkdir Frontend, Backend, BaseDatos
+
+
+    Directorio: C:\Users\abel suarez\Desktop\Sistema_Ventas
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/11/2026     11:18                Frontend
+d-----         8/11/2026     11:18                Backend
+d-----         8/11/2026     11:18                BaseDatos
+
+
+PS C:\Users\abel suarez\Desktop\Sistema_Ventas> echo "Version 1.0 del Sistema de Ventas" > README.md
+PS C:\Users\abel suarez\Desktop\Sistema_Ventas> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Version 1.0 del Sistema de Ventas"
+PS C:\Users\abel suarez\Desktop\Sistema_Ventas> git config --global user.name "Abel"
+
+PS C:\Users\abel suarez\Desktop\Sistema_Ventas> git config --global user.email "abel82suare@gamail.com"
+
+PS C:\Users\abel suarez\Desktop\Sistema_Ventas> git init
+
+PS C:\Users\abel suarez\Desktop\Sistema_Ventas> git add .
+
+PS C:\Users\abel suarez\Desktop\Sistema_Ventas> New-Item Frontend\.gitkeep, Backend\.gitkeep, BaseDatos\.gitkeep -ItemType File
+
+
+    Directorio: C:\Users\abel suarez\Desktop\Sistema_Ventas\Frontend
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/11/2026     11:56              0 .gitkeep
+
+
+    Directorio: C:\Users\abel suarez\Desktop\Sistema_Ventas\Backend
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/11/2026     11:56              0 .gitkeep
+
+
+    Directorio: C:\Users\abel suarez\Desktop\Sistema_Ventas\BaseDatos
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/11/2026     11:56              0 .gitkeep
+
+
+PS C:\Users\abel suarez\Desktop\Sistema_Ventas> git add .
+
+PS C:\Users\abel suarez\Desktop\Sistema_Ventas> git commit -m "Día 1: Despliegue de la estructura base"
+
+PS C:\Users\abel suarez\Desktop\Sistema_Ventas> git branch -M main
+
+PS C:\Users\abel suarez\Desktop\Sistema_Ventas> git remote add origin https://github.com/abelsuarez82/Sistema-Ventas.git
+
+PS C:\Users\abel suarez\Desktop\Sistema_Ventas> git remote -v
+
+PS C:\Users\abel suarez\Desktop\Sistema_Ventas> git push -u origin main
+
+PS C:\Users\abel suarez\Desktop\Sistema_Ventas> echo "Conectando al servidor SQL..." > BaseDatos\conexion.ps1
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Conectando al servidor SQL..."
+PS C:\Users\abel suarez\Desktop\Sistema_Ventas> echo "Actualizacion Dia 2: Modulo DB agregado" >> README.md
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Actualizacion Dia 2: Modulo DB agregado"
+PS C:\Users\abel suarez\Desktop\Sistema_Ventas> mkdir Pruebas_Unitarias
+
+
+    Directorio: C:\Users\abel suarez\Desktop\Sistema_Ventas
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/11/2026     12:36                Pruebas_Unitarias
+
+
+PS C:\Users\abel suarez\Desktop\Sistema_Ventas> New-Item Pruebas_Unitarias\.gitkeep -ItemType File
+
+
+    Directorio: C:\Users\abel suarez\Desktop\Sistema_Ventas\Pruebas_Unitarias
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/11/2026     12:37              0 .gitkeep
+
+
+PS C:\Users\abel suarez\Desktop\Sistema_Ventas> git add .
+
+PS C:\Users\abel suarez\Desktop\Sistema_Ventas> git commit -m "Día 2: Agregados scripts de DB y carpeta de pruebas"
+
+PS C:\Users\abel suarez\Desktop\Sistema_Ventas> git push
+
+PS C:\Users\abel suarez\Desktop\Sistema_Ventas> Stop-Transcript
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261108124336
+**********************
